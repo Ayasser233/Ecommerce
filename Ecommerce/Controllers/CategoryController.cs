@@ -1,6 +1,7 @@
 ﻿// Controllers/CategoryController.cs
 using Ecommerce.Data;
 using Ecommerce.Models;
+using Ecommerce.Models.CategoryModels;
 using Microsoft.AspNetCore.Mvc;
 
 

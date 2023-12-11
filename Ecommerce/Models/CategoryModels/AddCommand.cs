@@ -1,13 +1,13 @@
 ﻿using Ecommerce.Data;
 
-namespace Ecommerce.Models
+namespace Ecommerce.Models.CategoryModels
 {
-    public class DeleteCommand : ICommand
+    public class AddCommand : ICommand
     {
         private readonly AppDbContext _context;
         private readonly Category _category;
 
-        public DeleteCommand(AppDbContext context, Category category)
+        public AddCommand(AppDbContext context, Category category)
         {
             _context = context;
             _category = category;
@@ -15,7 +15,7 @@ namespace Ecommerce.Models
 
         public void Execute()
         {
-            _context.Categories.Remove(_category);
+            _context.Categories.Add(_category);
             _context.SaveChanges();
         }
     }

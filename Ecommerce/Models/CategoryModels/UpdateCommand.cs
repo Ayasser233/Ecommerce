@@ -1,6 +1,6 @@
 ﻿using Ecommerce.Data;
 
-namespace Ecommerce.Models
+namespace Ecommerce.Models.CategoryModels
 {
     public class UpdateCommand : ICommand
     {
