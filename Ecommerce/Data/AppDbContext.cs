@@ -1,4 +1,4 @@
-﻿using Ecommerce.Models.CategoryModels;
+﻿using Ecommerce.Models;
 using Ecommerce.Models.ViewModel;
 using Microsoft.EntityFrameworkCore;
 
