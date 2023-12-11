@@ -2,7 +2,7 @@
 using Ecommerce.Models;
 
 namespace Ecommerce.Models
-{
+{ 
     public class UpdateCommand : ICommand
     {
         private readonly AppDbContext _context;

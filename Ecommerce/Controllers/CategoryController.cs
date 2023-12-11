@@ -2,7 +2,7 @@
 using Ecommerce.Data;
 using Ecommerce.Models;
 using Microsoft.AspNetCore.Mvc;
-
+ 
 
 public class CategoryController : Controller
 {

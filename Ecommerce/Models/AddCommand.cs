@@ -1,5 +1,5 @@
 ﻿using Ecommerce.Data;
-
+ 
 namespace Ecommerce.Models
 {
     public class AddCommand : ICommand
