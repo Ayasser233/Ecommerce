@@ -1,4 +1,5 @@
-﻿using Ecommerce.Models.ViewModel;
+﻿using Ecommerce.Models.CategoryModels;
+using Ecommerce.Models.ViewModel;
 using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce.Data
@@ -21,5 +22,7 @@ namespace Ecommerce.Data
         }
 
         public DbSet<AccounInfoModel> AccounInfos { get; set; }
+        public DbSet<Category> Categories { get; set; }
+
     }
 }
