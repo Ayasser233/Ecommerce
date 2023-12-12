@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!-- Views/Category/Index.cshtml -->
+<!-- Views/Category/Index.cshtml -->
+@model List<Category>
+
+<h1>Categories</h1>
+
+<a asp-action="Add">Add New Category</a>
+
+<table>
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var category in Model)
+        {
+            <tr>
+                <td>@category.Name</td>
+                <td>
+                    <a asp-action="Update" asp-route-id="@category.Id">Update</a> |
+                    <a asp-action="Delete" asp-route-id="@category.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
