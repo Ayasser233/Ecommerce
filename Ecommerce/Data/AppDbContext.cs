@@ -10,16 +10,6 @@ namespace Ecommerce.Data
 
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<AccounInfoModel>().HasKey(am => new
-            {
-                am.SSN
-            });
-
-            base.OnModelCreating(modelBuilder);
-        }
-
         public DbSet<AccounInfoModel> AccounInfos { get; set; }
     }
 }

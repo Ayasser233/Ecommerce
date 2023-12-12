@@ -1,14 +1,13 @@
-﻿namespace Ecommerce.Models.ViewModel
+﻿using Microsoft.AspNetCore.Identity;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Ecommerce.Models.ViewModel
 {
-    public class AccounInfoModel
+    public class AccounInfoModel : IdentityUser
     {
-        public int? SSN { get; set; }
-        public string? Name { get; set; }
-        public string? Surname { get; set; }
-        public string? Email { get; set; }
-        public string? Phone { get; set; }
-        public DateTime CreationTime { get; set; }
-        public bool IsModerator { get; set; }
-        public bool IsAdmin { get; set; }
+
     }
 }
