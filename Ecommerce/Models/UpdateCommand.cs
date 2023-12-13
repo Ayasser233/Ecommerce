@@ -1,13 +1,14 @@
 ﻿using Ecommerce.Data;
+using Ecommerce.Models;
 
-namespace Ecommerce.Models.CategoryModels
-{
-    public class AddCommand : ICommand
+namespace Ecommerce.Models
+{ 
+    public class UpdateCommand : ICommand
     {
         private readonly AppDbContext _context;
         private readonly Category _category;
 
-        public AddCommand(AppDbContext context, Category category)
+        public UpdateCommand(AppDbContext context, Category category)
         {
             _context = context;
             _category = category;
@@ -15,7 +16,7 @@ namespace Ecommerce.Models.CategoryModels
 
         public void Execute()
         {
-            _context.Categories.Add(_category);
+            _context.Categories.Update(_category);
             _context.SaveChanges();
         }
     }

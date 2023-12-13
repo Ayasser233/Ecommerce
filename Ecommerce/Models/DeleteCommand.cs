@@ -1,6 +1,7 @@
 ﻿using Ecommerce.Data;
-
-namespace Ecommerce.Models.CategoryModels
+using Ecommerce.Models;
+ 
+namespace Ecommerce.Models
 {
     public class DeleteCommand : ICommand
     {
