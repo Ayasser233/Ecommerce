@@ -1,9 +1,9 @@
-﻿using Ecommerce.Models.CategoryModels;
+﻿using Ecommerce.Models;
 using Ecommerce.Models.ViewModel;
 using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce.Data
-{
+{ 
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
