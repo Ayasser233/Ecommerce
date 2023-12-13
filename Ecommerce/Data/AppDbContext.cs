@@ -13,6 +13,5 @@ namespace Ecommerce.Data
 
         public DbSet<AccounInfoModel> AccounInfos { get; set; }
         public DbSet<Category> Category { get; set; }
-        public object Categories { get; internal set; }
     }
 }
